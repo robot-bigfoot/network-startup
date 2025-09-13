@@ -1,0 +1,10 @@
+[Unit]
+Description=Network startup service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=sh /home/robot/code/network-startup/run.sh
+
+[Install]
+WantedBy=multi-user.target
